@@ -15,7 +15,7 @@ jobs:
     - name: Fetch latest data
       run: |
         echo "Hallo World!"
-        curl https://www.worldometers.info/coronavirus | jq . > incidents.json
+        curl https://www.worldometers.info/coronavirus | jq . > worldometer-covid-snapshot.json
     
     - name: Commit and push if it changed
       run: |-
