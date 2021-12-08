@@ -15,7 +15,7 @@ jobs:
     - name: Fetch latest data
       run: |
         echo "Hallo World!"
-        curl https://www.fire.ca.gov/umbraco/Api/IncidentApi/GetIncidents | jq . > incidents.json
+        curl https://www.worldometers.info/coronavirus | jq . > incidents.json
     
     - name: Commit and push if it changed
       run: |-
